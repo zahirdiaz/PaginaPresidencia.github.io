@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidencia de la República</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+  <!-- Imágenes de Header -->
+    <img src=".//assets/img/Head.png" class="img-fluid" alt="header">
+
+  <!-- Botones de encabezado -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-2">
+          <img src=".//assets/img/Logo.png" class="img-fluid" alt="header">
+        </div>
+
+        <!-- Nav Bar Móviles -->
+        <div class="navbar-movil">
+          <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <h4 class="text-white">Collapsed content</h4>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+          </div>
+        </div>
+
+        <div class="col-6">
+            <img src=".//assets/img/LogosEncabezado.png" class="img-LogosEncabezado" alt="Botones Header">
+        </div>
+        <div class="col-3 d-flex justify-content-center align-items-center">
+            <img src=".//assets/img/redes.png" class="img-redes" alt="redes">
+        </div>
+        <div class="col-1 d-flex justify-content-center align-items-center">
+            <img src=".//assets/img/mapa.png" class="img-mapa" alt="mapa">
+        </div>
+      </div>
+    </div>
+  
+  <!-- Franja amarilla -->
+    <div class="row">
+      <div class="col-12">
+        <img src=".//assets/img/franja amarilla.png" class="img-franjaAmarilla" alt="franja">
+      </div>
+    </div>
+
+  <!-- Barra de búsqueda -->
+    <div class="barraBusqueda">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <form class="form-inline">
+              <input class="form-control w-75 mr-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+  <!-- Visuales de información -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <img src="./assets/img/prensaFranjaAmarilla.png" class="prensa-franja" alt="Mantente Al Dia">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <img src="./assets/img/mantenteAlDia.png" alt="Prensa Franja Amarilla">
+        </div>
+      </div>
+    </div>
+
+<!-- Botones de secciones informativas -->
+<div class="container my-5">
+  <div class="contenedor-flex">
+    <div class="col-2">
+      <img src="./assets/img/gabineteGris.png" alt="Gabinete" class="rotate-target">
+      <div class="btnLabel">Gabinete</div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/noticiaGris.png" alt="Noticias" class="rotate-target">
+      <div class="btnLabel">Noticias</div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/discursosGris.png" alt="Discursos" class="rotate-target">
+      <div class="btnLabel">Discursos</div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/galeriasGris.png" alt="Galerías" class="rotate-target">
+      <div class="btnLabel">Galerías</div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/videosGris.png" alt="Videos" class="rotate-target">
+      <div class="btnLabel">Videos</div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/audiosGris.png" alt="Audios" class="rotate-target">
+      <div class="btnLabel">Audios</div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/entereseGris.png" alt="Entérese del cambio" class="rotate-target">
+      <div class="btnLabel">Cambio</div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Dias de gobierno -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img src=".//assets/img/Dias de gobierno.png" class="img-diasGobierno" alt="Gobierno">
+        </div>
+      </div>
+    </div>
+    
+  <!-- Botones de Noticias -->
+    <div class="container mt-5" id="Noticias">
+      <div class="row mt-3">
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="1">
+            Noticia 1
+            <p id="p1" class="noticia-parrafo d-none"></p>
+            <img id="img1" class="img-fluid d-none" src="" alt="Noticia 1">
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="2">
+            Noticia 2
+            <p id="p2" class="noticia-parrafo d-none"></p>
+            <img id="img2" class="img-fluid d-none" src="" alt="Noticia 2">
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="3">
+            Noticia 3
+            <p id="p3" class="noticia-parrafo d-none"></p>
+            <img id="img3" class="img-fluid d-none" src="" alt="Noticia 3">
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="4">
+            Noticia 4
+            <p id="p4" class="noticia-parrafo d-none"></p>
+            <img id="img4" class="img-fluid d-none" src="" alt="Noticia 4">
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="5">
+            Noticia 5
+            <p id="p5" class="noticia-parrafo d-none"></p>
+            <img id="img5" class="img-fluid d-none" src="" alt="Noticia 5">
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="6">
+            Noticia 6
+            <p id="p6" class="noticia-parrafo d-none"></p>
+            <img id="img6" class="img-fluid d-none" src="" alt="Noticia 6">
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="7">
+            Noticia 7
+            <p id="p7" class="noticia-parrafo d-none"></p>
+            <img id="img7" class="img-fluid d-none" src="" alt="Noticia 7">
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="8">
+            Noticia 8
+            <p id="p8" class="noticia-parrafo d-none"></p>
+            <img id="img8" class="img-fluid d-none" src="" alt="Noticia 8">
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="9">
+            Noticia 9
+            <p id="p9" class="noticia-parrafo d-none"></p>
+            <img id="img9" class="img-fluid d-none" src="" alt="Noticia 9">
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="10">
+            Noticia 10
+            <p id="p10" class="noticia-parrafo d-none"></p>
+            <img id="img10" class="img-fluid d-none" src="" alt="Noticia 10">
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="11">
+            Noticia 11
+            <p id="p11" class="noticia-parrafo d-none"></p>
+            <img id="img11" class="img-fluid d-none" src="" alt="Noticia 11">
+          </button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary btn-block text-center" data-noticia="12">
+            Noticia 12
+            <p id="p12" class="noticia-parrafo d-none"></p>
+            <img id="img12" class="img-fluid d-none" src="" alt="Noticia 12">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const noticias = [
+        { titulo: "Noticia 1", imagen: "./assets/img/Noticia1.jpg", texto: "Integración latinoamericana, comercio y migración, temas clave de las reuniones del presidente Petro con mandatarios de Honduras y Bolivia. Montevideo (Uruguay), 1 marzo de 2025" },
+        { titulo: "Noticia 2", imagen: "./assets/img/Noticia2.jpg", texto: "Presidente Petro resalta encuentro con jefes de Estado de Brasil y Chile, y el mandatario electo de Uruguay, para construir caminos de unidad en Suramérica. Montevideo, Uruguay, 1 de marzo de 2025" },
+        { titulo: "Noticia 3", imagen: "./assets/img/Noticia3.jpg", texto: "Gustavo Petro asistirá a la posesión presidencial de Yamandú Orsi en Uruguay y cumplirá agenda bilateral en la región. Montevideo (Uruguay), 28 de febrero de 2025" },
+        { titulo: "Noticia 4", imagen: "./assets/img/Noticia4.jpg", texto: "Presidente Gustavo Petro anunció partida adicional de $ 2,1 billones en presupuesto de educación para la universidad pública. Suárez (Cauca), 28 de febrero de 2025" },
+        { titulo: "Noticia 5", imagen: "./assets/img/Noticia5.jpg", texto: "Aquí tiene que quedar una huella indeleble: que este fue el gobierno que permitió a la juventud de Colombia educarse, presidente Gustavo Petro.  Suárez (Cauca), 28 de febrero de 2025" },
+        { titulo: "Noticia 6", imagen: "./assets/img/Noticia6.jpg", texto: "Gobierno nacional entrega la sede de la Universidad del Valle en el municipio de Suárez (Cauca).  Suárez (Cauca), 28 de febrero de 2025" },
+        { titulo: "Noticia 7", imagen: "./assets/img/Noticia1.jpg", texto: "Aquí tiene que quedar una huella indeleble: que este fue el gobierno que permitió a la juventud de Colombia educarse" },
+        { titulo: "Noticia 8", imagen: "./assets/img/Noticia2.jpg", texto: "Aquí tiene que quedar una huella indeleble: que este fue el gobierno que permitió a la juventud de Colombia educarse." },
+        { titulo: "Noticia 9", imagen: "./assets/img/Noticia3.jpg", texto: "Aquí tiene que quedar una huella indeleble: que este fue el gobierno que permitió a la juventud de Colombia educarse." },
+        { titulo: "Noticia 10", imagen: "./assets/img/Noticia4.jpg", texto: "Aquí tiene que quedar una huella indeleble: que este fue el gobierno que permitió a la juventud de Colombia educarse." },
+        { titulo: "Noticia 11", imagen: "./assets/img/Noticia5.jpg", texto: "Aquí tiene que quedar una huella indeleble: que este fue el gobierno que permitió a la juventud de Colombia educarse" },
+        { titulo: "Noticia 12", imagen: "./assets/img/Noticia6.jpg", texto: "Gobierno nacional entrega la sede de la Universidad del Valle en el municipio de Suárez (Cauca).  Suárez (Cauca), 28 de febrero de 2025" }
+      ];
+
+      $(document).ready(function () {
+        // Recorre todas las noticias
+        for (let i = 0; i < noticias.length; i++) {
+            let parrafo = $("#p" + (i + 1));  // Asume que los párrafos tienen IDs como "p1", "p2", etc.
+            let imagen = $("#img" + (i + 1));  // Asume que las imágenes tienen IDs como "img1", "img2", etc.
+            
+            // Muestra el contenido de cada noticia inicialmente
+            parrafo.text(noticias[i].texto).removeClass("d-none").show();
+            imagen.attr("src", noticias[i].imagen).removeClass("d-none").show();
+            
+            // Agregar el manejador de click para cada botón correspondiente
+            $("button[data-noticia='" + (i + 1) + "']").click(function () {
+                if (parrafo.is(":visible")) {
+                    parrafo.addClass("d-none").slideUp(1000);
+                    imagen.addClass("d-none").slideUp(1000);
+                } else {
+                    parrafo.text(noticias[i].texto).removeClass("d-none").slideDown(1000);
+                    imagen.attr("src", noticias[i].imagen).removeClass("d-none").slideDown(1000);
+                }
+            });
+        }
+    });
+    
+    
+    </script>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <p>&copy; 2025 Presidencia de la República. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Botón flotante News-->
+    <button class="contenedor-flotante" onclick="location.href='#Noticias'">
+      <img src="./assets/img/news.png" alt=" Botón New's">
+    </button>
+
+    <script src="./assets/js/logica.js"></script>
+  </body>
+</html>
